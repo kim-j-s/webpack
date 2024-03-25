@@ -1,0 +1,11 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  > .inner {
+    padding: 10px;
+    background-color: blue;
+  }
+}
