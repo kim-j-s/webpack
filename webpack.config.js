@@ -18,6 +18,12 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
       },
+      // handlebar 설정
+      {
+        // hbs란 확장자가 있으면 loader를 통해서 handlebars-loader를 호출 한다.
+        test: /\.hbs$/,
+        loader: "handlebars-loader",
+      },
     ],
   },
   // Devserver
@@ -29,6 +35,7 @@ module.exports = {
     hot: true,
     // compress 압축
     compress: true,
+    port: 9000,
     open: true, // 브라우저 자동 열기
   },
   // Plugins
