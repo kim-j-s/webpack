@@ -6,6 +6,7 @@ module.exports = {
   mode: "development",
   // HTML 파일을 진입점으로 사용
   entry: "./src/index.html",
+  // entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"), // 번들링된 파일이 생성될 경로
     // filename: "index.html", // 번들링된 파일 이름
@@ -15,7 +16,7 @@ module.exports = {
     rules: [
       // html loader 설정
       {
-        test: /\.html$/i,
+        test: /\.html$/,
         loader: "html-loader",
       },
       // handlebar 설정
@@ -37,6 +38,9 @@ module.exports = {
     compress: true,
     port: 9000,
     open: true, // 브라우저 자동 열기
+    watchFiles: {
+      paths: ["src/**/*.html"],
+    },
   },
   // Plugins
   plugins: [
