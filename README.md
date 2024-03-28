@@ -21,5 +21,5 @@ webpack에서 html을 인식 할 수 있도록 하는 package
 
 
 // webpack-chokidar-plugin   
-파일과 폴더 감지
+파일과 폴더 감지   
 https://www.npmjs.com/package/webpack-chokidar-plugin
