@@ -16,5 +16,10 @@ npm install --save-dev html-webpack-plugin
 // webpack live server   
 npm install webpack-dev-server --save-dev   
 
-html-loader   
+// html-loader   
 webpack에서 html을 인식 할 수 있도록 하는 package   
+
+
+// webpack-chokidar-plugin   
+파일과 폴더 감지   
+https://www.npmjs.com/package/webpack-chokidar-plugin
